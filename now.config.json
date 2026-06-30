@@ -1,0 +1,9 @@
+{
+    "scope": "x_1912467_f1now1",
+    "scopeId": "6f37cd14937d8b14a03577f08bba1032",
+    "name": "F1Now1",
+    "licensing": {
+        "enforceLicense": "none"
+    },
+    "description": "Formula 1 app in ServiceNow"
+}
