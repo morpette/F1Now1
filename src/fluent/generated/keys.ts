@@ -445,6 +445,46 @@ declare global {
                         table: 'sys_atf_step'
                         id: '7b6095cb5b424e788771e6b84aaf2cfe'
                     }
+                    'f1now-app-menu': {
+                        table: 'sys_app_application'
+                        id: '4c9df227a39144c3b0353a57f3dcc589'
+                    }
+                    'f1now-module-championship': {
+                        table: 'sys_app_module'
+                        id: 'a8323196ed0845aabf7d9754bb88e914'
+                    }
+                    'f1now-module-circuit': {
+                        table: 'sys_app_module'
+                        id: 'e23402fb9745400ab676e8d638312811'
+                    }
+                    'f1now-module-constructor-standing': {
+                        table: 'sys_app_module'
+                        id: 'd2117aa445194e83a69a67fa81132b73'
+                    }
+                    'f1now-module-driver-standing': {
+                        table: 'sys_app_module'
+                        id: 'b4dde4242a8d4a9f8840adf5890a8862'
+                    }
+                    'f1now-module-driver-team-season': {
+                        table: 'sys_app_module'
+                        id: '372e43341c4940a4b55891b90243cd33'
+                    }
+                    'f1now-module-race': {
+                        table: 'sys_app_module'
+                        id: '83ca95ac7d8e4c7aba4d13f6a2f9859f'
+                    }
+                    'f1now-module-session': {
+                        table: 'sys_app_module'
+                        id: '2f0f3b384138436c9f09eec6903acb82'
+                    }
+                    'f1now-module-session-result': {
+                        table: 'sys_app_module'
+                        id: 'cc5812a18af9415489af8da6bd2e47c7'
+                    }
+                    'f1now-module-team': {
+                        table: 'sys_app_module'
+                        id: '4ac56a1dbf624aae88cadcaedda1f1d7'
+                    }
                     'f1now1-championship-acl-create': {
                         table: 'sys_security_acl'
                         id: 'df19dc4b91d34c73bc74cdc8b7608fb9'
