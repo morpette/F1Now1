@@ -26,9 +26,10 @@ export const f1CompareDrivers = Action(
             status_code: IntegerColumn({ label: 'Status Code' }),
             error_message: StringColumn({ label: 'Error Message', maxLength: 1000 }),
         },
+        masterSnapshot: 'd2335b38937dcf14a03577f08bba10b7',
     },
     (params) => {
-        const call = wfa.actionStep(
+        const invoke_f1_api_comparedrivers = wfa.actionStep(
             actionStep.script,
             { $id: Now.ID['f1-step-compare-drivers'], label: 'Invoke F1 API compareDrivers' },
             {
@@ -45,13 +46,13 @@ export const f1CompareDrivers = Action(
                     error_message: StringColumn({ label: 'Error Message', maxLength: 1000 }),
                 },
                 errorHandlingType: 'dont_stop_the_action',
-            },
+            }
         )
 
         wfa.assignActionOutputs(params.outputs, {
-            response_body: wfa.dataPill(call.response_body, 'string'),
-            status_code: wfa.dataPill(call.status_code, 'integer'),
-            error_message: wfa.dataPill(call.error_message, 'string'),
+            response_body: wfa.dataPill(invoke_f1_api_comparedrivers.response_body, 'string'),
+            status_code: wfa.dataPill(invoke_f1_api_comparedrivers.status_code, 'integer'),
+            error_message: wfa.dataPill(invoke_f1_api_comparedrivers.error_message, 'string'),
         })
-    },
+    }
 )

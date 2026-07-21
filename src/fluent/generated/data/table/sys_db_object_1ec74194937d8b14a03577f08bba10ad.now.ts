@@ -12,7 +12,14 @@ export const x_1912467_f1now1_driver = Table({
     label: 'Driver',
     name: 'x_1912467_f1now1_driver',
     schema: {
-        name: StringColumn({ label: 'Name', maxLength: 40 }),
+        name: StringColumn({
+            label: [
+                {
+                    label: 'Name',
+                },
+            ],
+            maxLength: 40,
+        }),
         surname: StringColumn({ label: 'Surname', maxLength: 40 }),
         driver_id: StringColumn({ label: 'Driver ID', maxLength: 60 }),
         abbreviation: StringColumn({ label: 'Abbreviation', maxLength: 3 }),

@@ -17,17 +17,18 @@ export const f1GetAllDrivers = Action(
         description: 'Fetch all F1 drivers who raced at least one race from f1api.dev (GET /api/drivers).',
         category: 'f1_data',
         inputs: {
-            limit: IntegerColumn({ label: 'Limit', hint: 'Records to return (1-100).', default: 30, min: 1, max: 100 }),
-            offset: IntegerColumn({ label: 'Offset', hint: 'Records to skip.', default: 0, min: 0, max: 10000 }),
+            limit: IntegerColumn({ label: 'Limit', hint: 'Records to return (1-100).', default: 30 }),
+            offset: IntegerColumn({ label: 'Offset', hint: 'Records to skip.', default: 0 }),
         },
         outputs: {
             response_body: StringColumn({ label: 'Response Body', maxLength: 65536 }),
             status_code: IntegerColumn({ label: 'Status Code' }),
             error_message: StringColumn({ label: 'Error Message', maxLength: 1000 }),
         },
+        masterSnapshot: '3f331f38937dcf14a03577f08bba1092',
     },
     (params) => {
-        const call = wfa.actionStep(
+        const invoke_f1_api_getalldrivers = wfa.actionStep(
             actionStep.script,
             { $id: Now.ID['f1-step-get-all-drivers'], label: 'Invoke F1 API getAllDrivers' },
             {
@@ -43,13 +44,13 @@ export const f1GetAllDrivers = Action(
                     error_message: StringColumn({ label: 'Error Message', maxLength: 1000 }),
                 },
                 errorHandlingType: 'dont_stop_the_action',
-            },
+            }
         )
 
         wfa.assignActionOutputs(params.outputs, {
-            response_body: wfa.dataPill(call.response_body, 'string'),
-            status_code: wfa.dataPill(call.status_code, 'integer'),
-            error_message: wfa.dataPill(call.error_message, 'string'),
+            response_body: wfa.dataPill(invoke_f1_api_getalldrivers.response_body, 'string'),
+            status_code: wfa.dataPill(invoke_f1_api_getalldrivers.status_code, 'integer'),
+            error_message: wfa.dataPill(invoke_f1_api_getalldrivers.error_message, 'string'),
         })
-    },
+    }
 )

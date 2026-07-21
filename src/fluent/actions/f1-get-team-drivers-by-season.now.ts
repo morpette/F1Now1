@@ -19,17 +19,18 @@ export const f1GetTeamDriversBySeason = Action(
         inputs: {
             year: IntegerColumn({ label: 'Season Year', mandatory: true, hint: 'e.g. 2024' }),
             team_id: StringColumn({ label: 'Team ID', mandatory: true, hint: 'e.g. red_bull' }),
-            limit: IntegerColumn({ label: 'Limit', hint: 'Records to return (1-100).', default: 30, min: 1, max: 100 }),
-            offset: IntegerColumn({ label: 'Offset', hint: 'Records to skip.', default: 0, min: 0, max: 10000 }),
+            limit: IntegerColumn({ label: 'Limit', hint: 'Records to return (1-100).', default: 30 }),
+            offset: IntegerColumn({ label: 'Offset', hint: 'Records to skip.', default: 0 }),
         },
         outputs: {
             response_body: StringColumn({ label: 'Response Body', maxLength: 65536 }),
             status_code: IntegerColumn({ label: 'Status Code' }),
             error_message: StringColumn({ label: 'Error Message', maxLength: 1000 }),
         },
+        masterSnapshot: '62535b78937dcf14a03577f08bba10e7',
     },
     (params) => {
-        const call = wfa.actionStep(
+        const invoke_f1_api_getteamdriversbyseason = wfa.actionStep(
             actionStep.script,
             { $id: Now.ID['f1-step-get-team-drivers-by-season'], label: 'Invoke F1 API getTeamDriversBySeason' },
             {
@@ -47,13 +48,13 @@ export const f1GetTeamDriversBySeason = Action(
                     error_message: StringColumn({ label: 'Error Message', maxLength: 1000 }),
                 },
                 errorHandlingType: 'dont_stop_the_action',
-            },
+            }
         )
 
         wfa.assignActionOutputs(params.outputs, {
-            response_body: wfa.dataPill(call.response_body, 'string'),
-            status_code: wfa.dataPill(call.status_code, 'integer'),
-            error_message: wfa.dataPill(call.error_message, 'string'),
+            response_body: wfa.dataPill(invoke_f1_api_getteamdriversbyseason.response_body, 'string'),
+            status_code: wfa.dataPill(invoke_f1_api_getteamdriversbyseason.status_code, 'integer'),
+            error_message: wfa.dataPill(invoke_f1_api_getteamdriversbyseason.error_message, 'string'),
         })
-    },
+    }
 )

@@ -7,8 +7,8 @@ Record({
         header: false,
         name: 'x_1912467_f1now1_driver',
         sys_domain: 'global',
-        sys_domain_path: '/',
         title: true,
         view: 'NULL',
+        sys_domain_path: '/',
     },
 })
