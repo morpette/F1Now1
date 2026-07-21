@@ -1,12 +1,12 @@
 import '@servicenow/sdk/global'
 import { Flow, wfa, trigger, action, FlowArray, FlowObject } from '@servicenow/sdk/automation'
 import { IntegerColumn } from '@servicenow/sdk/core'
-import { f1GetAllDrivers } from '../actions/f1-get-all-drivers.now'
-import { f1UpsertDrivers } from '../actions/f1-upsert-drivers.now'
+import { f1GetAllTeams } from '../actions/f1-get-all-teams.now'
+import { f1UpsertTeams } from '../actions/f1-upsert-teams.now'
 
 // f1api.dev caps `limit` at 100 regardless of what's requested, so a single
-// fetch can never return the full (~885 and growing) driver roster. The 20
-// offsets seeded below are a generous upper bound (2000 drivers) on how far
+// fetch can never return the full (~214 and growing) team roster. The 20
+// offsets seeded below are a generous upper bound (2000 teams) on how far
 // pagination will go — the loop always stops as soon as a page comes back
 // empty, well before reaching the end of that list. Fluent source files only
 // allow static literals passed directly to appendToFlowVariables (no local
@@ -15,16 +15,16 @@ import { f1UpsertDrivers } from '../actions/f1-upsert-drivers.now'
 const PAGE_SIZE = 100
 
 /**
- * F1: Populate All Drivers — fulfillment flow for the "Populate All Drivers"
- * catalog item. Pages through every driver from f1api.dev (100 per request,
- * the API's hard limit) and upserts them into the Driver table. Triggered by
+ * F1: Populate All Teams — fulfillment flow for the "Populate All Teams"
+ * catalog item. Pages through every team from f1api.dev (100 per request,
+ * the API's hard limit) and upserts them into the Team table. Triggered by
  * ordering the catalog item; no user input.
  */
-export const f1PopulateAllDrivers = Flow(
+export const f1PopulateAllTeams = Flow(
     {
-        $id: Now.ID['f1-flow-populate-all-drivers'],
-        name: 'F1: Populate All Drivers',
-        description: 'Fetches all F1 drivers from f1api.dev, paging through the full roster, and upserts them into the Driver table.',
+        $id: Now.ID['f1-flow-populate-all-teams'],
+        name: 'F1: Populate All Teams',
+        description: 'Fetches all F1 teams from f1api.dev, paging through the full roster, and upserts them into the Team table.',
         flowVariables: {
             offsets: FlowArray({
                 label: 'Page Offsets',
@@ -40,12 +40,12 @@ export const f1PopulateAllDrivers = Flow(
     },
     wfa.trigger(
         trigger.application.serviceCatalog,
-        { $id: Now.ID['f1-trigger-populate-all-drivers'] },
+        { $id: Now.ID['f1-trigger-populate-all-teams'] },
         { run_flow_in: 'background' }
     ),
     (params) => {
         wfa.flowLogic.appendToFlowVariables(
-            { $id: Now.ID['f1-flowlogic-seed-page-offsets'], annotation: 'Seed the page offsets to walk (0, 100, 200, ...)' },
+            { $id: Now.ID['f1-flowlogic-seed-team-page-offsets'], annotation: 'Seed the page offsets to walk (0, 100, 200, ...)' },
             params.flowVariables,
             {
                 offsets: [
@@ -59,37 +59,37 @@ export const f1PopulateAllDrivers = Flow(
 
         wfa.flowLogic.forEach(
             wfa.dataPill(params.flowVariables.offsets, 'array.object'),
-            { $id: Now.ID['f1-flowlogic-for-each-page'], annotation: 'Fetch and upsert one page of drivers at a time' },
+            { $id: Now.ID['f1-flowlogic-for-each-team-page'], annotation: 'Fetch and upsert one page of teams at a time' },
             (page) => {
                 const fetch_page = wfa.action(
-                    f1GetAllDrivers,
-                    { $id: Now.ID['f1-flowstep-fetch-drivers-page'], annotation: 'Fetch one page of drivers from f1api.dev' },
+                    f1GetAllTeams,
+                    { $id: Now.ID['f1-flowstep-fetch-teams-page'], annotation: 'Fetch one page of teams from f1api.dev' },
                     { limit: PAGE_SIZE, offset: wfa.dataPill(page.offset, 'integer') }
                 )
 
                 wfa.flowLogic.if(
                     {
-                        $id: Now.ID['f1-flowlogic-page-fetch-succeeded'],
+                        $id: Now.ID['f1-flowlogic-team-page-fetch-succeeded'],
                         condition: `${wfa.dataPill(fetch_page.status_code, 'integer')}=200`,
                         annotation: 'Only upsert if the fetch succeeded',
                     },
                     () => {
                         const upsert_page = wfa.action(
-                            f1UpsertDrivers,
-                            { $id: Now.ID['f1-flowstep-upsert-drivers-page'], annotation: 'Upsert this page of drivers into the Driver table' },
-                            { drivers_json: wfa.dataPill(fetch_page.response_body, 'string') }
+                            f1UpsertTeams,
+                            { $id: Now.ID['f1-flowstep-upsert-teams-page'], annotation: 'Upsert this page of teams into the Team table' },
+                            { teams_json: wfa.dataPill(fetch_page.response_body, 'string') }
                         )
 
                         wfa.flowLogic.if(
                             {
-                                $id: Now.ID['f1-flowlogic-page-empty'],
+                                $id: Now.ID['f1-flowlogic-team-page-empty'],
                                 condition: `${wfa.dataPill(upsert_page.created_count, 'integer')}=0^${wfa.dataPill(upsert_page.updated_count, 'integer')}=0`,
-                                annotation: 'Stop once a page comes back with no drivers — the previous page was the last one',
+                                annotation: 'Stop once a page comes back with no teams — the previous page was the last one',
                             },
                             () => {
                                 wfa.flowLogic.exitLoop({
-                                    $id: Now.ID['f1-flowlogic-exit-loop-empty-page'],
-                                    annotation: 'Reached the end of the driver roster',
+                                    $id: Now.ID['f1-flowlogic-exit-loop-team-empty-page'],
+                                    annotation: 'Reached the end of the team roster',
                                 })
                             }
                         )
@@ -97,19 +97,19 @@ export const f1PopulateAllDrivers = Flow(
                 )
 
                 wfa.flowLogic.else(
-                    { $id: Now.ID['f1-flowlogic-page-fetch-failed'], annotation: 'Log the fetch failure and stop paging' },
+                    { $id: Now.ID['f1-flowlogic-team-page-fetch-failed'], annotation: 'Log the fetch failure and stop paging' },
                     () => {
                         wfa.action(
                             action.core.log,
-                            { $id: Now.ID['f1-flowstep-log-page-fetch-failure'] },
+                            { $id: Now.ID['f1-flowstep-log-team-page-fetch-failure'] },
                             {
                                 log_level: 'error',
-                                log_message: `F1 Populate All Drivers: page fetch failed at offset ${wfa.dataPill(page.offset, 'integer')}, status=${wfa.dataPill(fetch_page.status_code, 'integer')} error=${wfa.dataPill(fetch_page.error_message, 'string')}`,
+                                log_message: `F1 Populate All Teams: page fetch failed at offset ${wfa.dataPill(page.offset, 'integer')}, status=${wfa.dataPill(fetch_page.status_code, 'integer')} error=${wfa.dataPill(fetch_page.error_message, 'string')}`,
                             }
                         )
 
                         wfa.flowLogic.exitLoop({
-                            $id: Now.ID['f1-flowlogic-exit-loop-fetch-failed'],
+                            $id: Now.ID['f1-flowlogic-exit-loop-team-fetch-failed'],
                             annotation: 'Stop paging after a fetch failure',
                         })
                     }
