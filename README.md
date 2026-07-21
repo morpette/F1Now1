@@ -70,4 +70,4 @@ Data is sourced from [f1api.dev](https://f1api.dev). See [`docs/F1api.dev/openap
 - [`docs/deleting-fluent-artifacts.md`](docs/deleting-fluent-artifacts.md) — Cleanup playbook
 
 # Acknowledgements
-The fundamental building block for my project is the API endpoints that Rafa Canosa has developed is still maintaining. Please check out his projects over at https://github.com/Rafacv23
+The fundamental building block for my project is the API endpoints that Rafa Canosa has developed and is still maintaining. Please check out his projects over at https://github.com/Rafacv23
