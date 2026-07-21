@@ -14,7 +14,7 @@ export const x_1912467_f1now1_championship = Table({
     name: 'x_1912467_f1now1_championship',
     schema: {
         championship_id: StringColumn({ label: 'Championship ID', maxLength: 60, mandatory: true, unique: true }),
-        year: IntegerColumn({ label: 'Year' }),
+        year: IntegerColumn({ label: 'Year', attributes: { format: 'none' } }),
         name: StringColumn({ label: 'Name', maxLength: 100 }),
         url: UrlColumn({ label: 'URL' }),
     },

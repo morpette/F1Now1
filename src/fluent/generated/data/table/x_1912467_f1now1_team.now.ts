@@ -16,7 +16,7 @@ export const x_1912467_f1now1_team = Table({
         team_id: StringColumn({ label: 'Team ID', maxLength: 60, mandatory: true, unique: true }),
         name: StringColumn({ label: 'Name', maxLength: 100 }),
         nationality: StringColumn({ label: 'Nationality', maxLength: 50 }),
-        first_appearance: IntegerColumn({ label: 'First Appearance' }),
+        first_appearance: IntegerColumn({ label: 'First Appearance', attributes: { format: 'none' } }),
         constructors_championships: IntegerColumn({ label: 'Constructors Championships' }),
         drivers_championships: IntegerColumn({ label: 'Drivers Championships' }),
         url: UrlColumn({ label: 'URL' }),

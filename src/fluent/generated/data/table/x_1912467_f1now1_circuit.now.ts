@@ -20,10 +20,10 @@ export const x_1912467_f1now1_circuit = Table({
         circuit_length: StringColumn({ label: 'Circuit Length', maxLength: 40 }),
         number_of_corners: IntegerColumn({ label: 'Number of Corners' }),
         lap_record: StringColumn({ label: 'Lap Record', maxLength: 40 }),
-        first_participation_year: IntegerColumn({ label: 'First Participation Year' }),
+        first_participation_year: IntegerColumn({ label: 'First Participation Year', attributes: { format: 'none' } }),
         fastest_lap_driver: ReferenceColumn({ label: 'Fastest Lap Driver', referenceTable: 'x_1912467_f1now1_driver' }),
         fastest_lap_team: ReferenceColumn({ label: 'Fastest Lap Team', referenceTable: 'x_1912467_f1now1_team' }),
-        fastest_lap_year: IntegerColumn({ label: 'Fastest Lap Year' }),
+        fastest_lap_year: IntegerColumn({ label: 'Fastest Lap Year', attributes: { format: 'none' } }),
         url: UrlColumn({ label: 'URL' }),
     },
 })
