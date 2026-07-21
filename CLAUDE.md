@@ -44,9 +44,13 @@ Each `.now.ts` file exports a single artifact using a Fluent API builder functio
 - `security/access-control/` — ACL rules (`Acl()`)
 - `security/role/` — Application roles (`Role()`)
 - `user-interface/list/` — List view column configurations (`List()`)
+- `other/sys-scope-privilege/` — Cross-scope privilege grants (`sys_scope_privilege` records)
+- `other/sys-embedded-help-role/` — Embedded help role bindings (`sys_embedded_help_role` records)
 - `keys.ts` — Composite key registry (`Now.Internal.Keys`) used to resolve sys_ids for generated records
 
-File names are prefixed with the ServiceNow sys_id of the artifact they represent.
+File names are either human-readable (e.g. `f1now1-championship-acl-create.now.ts`) or, for records without a natural name, prefixed with the ServiceNow sys_id of the artifact they represent (e.g. `sys_scope_privilege_0419977493bdcf14a03577f08bba102f.now.ts`).
+
+This directory is populated by `npm run transform` (`now-sdk transform`), which converts XML metadata into `.now.ts` files here and deletes the source XML on success — see `now-sdk explain developing-apps-guide` for details. The target directory name is configurable via `now.config.json` (this project uses the default, `generated`). Note: if a record exists both as a `.now.ts` file and as leftover XML in `metadata/`, the XML version wins at build time, so converted XML files should be removed to avoid silent conflicts.
 
 ### Application scope
 
