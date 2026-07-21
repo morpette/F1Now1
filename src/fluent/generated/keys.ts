@@ -1327,6 +1327,29 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_list_element'
+                        id: '05943a66e68745f5950208fed028529f'
+                        key: {
+                            list_id: {
+                                id: '99630478b28b4b55a274f11a22b081d0'
+                                key: {
+                                    name: 'x_1912467_f1now1_team'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'drivers_championships'
+                        }
+                    },
+                    {
                         table: 'sys_hub_step_ext_output'
                         id: '05d1cc1daaa74c839235e4adcda3f5f4'
                         key: {
@@ -1345,6 +1368,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: '0641a536fe224e2d919a2e1e2c481ec2'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: '84adee185bae4c4e8249ed026fa1a25f'
@@ -1487,6 +1511,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: '09405ab8791a4f97814af5d28192b3e2'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: '04d244e1f0584ea79a57f0c4234ad913'
@@ -1517,6 +1542,29 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_list_element'
+                        id: '09a39084b8f84a06b9934ee60f252e97'
+                        key: {
+                            list_id: {
+                                id: 'ae42bd37afb64ef4bdb27f1574f09336'
+                                key: {
+                                    name: 'x_1912467_f1now1_team_standing'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'team'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '09bdbfff22af447a929201b575096a41'
                         key: {
@@ -1544,6 +1592,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: '0a51a86c53f1432daae831a478b56166'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: '06a71da24e804438b952dc25ddb20858'
@@ -1643,6 +1692,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: '0be3faee945c40b0890508fbbc8234a7'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: 'aa9e3c1361aa4170b190e94ea5930f4e'
@@ -1715,6 +1765,29 @@ declare global {
                         key: {
                             model: 'd81caba6bbc74f1cb15990a516cdcb9b'
                             element: '__dont_treat_as_error__'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_list_element'
+                        id: '0c859dacfb774684af4e349d1e8d0e4c'
+                        key: {
+                            list_id: {
+                                id: 'b2c70d54937d8b14a03577f08bba1021'
+                                key: {
+                                    name: 'x_1912467_f1now1_driver'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'abbreviation'
                         }
                     },
                     {
@@ -1912,6 +1985,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: '10691b98f2dc4af4b6a00e686debce7d'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: '99630478b28b4b55a274f11a22b081d0'
@@ -2059,6 +2133,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: '148e78384b164ff18f426abb8573d38d'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: 'dcb53bb5342e4a0aa4aabb738be16c76'
@@ -2298,6 +2373,29 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_list_element'
+                        id: '18cfb4cb69974ec6b1417a85aaeab402'
+                        key: {
+                            list_id: {
+                                id: '99630478b28b4b55a274f11a22b081d0'
+                                key: {
+                                    name: 'x_1912467_f1now1_team'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'nationality'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '1907a830163a412091fe7ca5eb07a308'
                         key: {
@@ -2354,6 +2452,29 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_list_element'
+                        id: '19ed7333c9ad43d2b054fbcbe3d469e2'
+                        key: {
+                            list_id: {
+                                id: 'e6c9d5aa5b594d53a106e09df617a2df'
+                                key: {
+                                    name: 'x_1912467_f1now1_session_res'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'retired'
+                        }
+                    },
+                    {
                         table: 'sys_hub_step_ext_input'
                         id: '1a439378937dcf14a03577f08bba1073'
                         deleted: true
@@ -2368,6 +2489,29 @@ declare global {
                         key: {
                             name: 'x_1912467_f1now1_circuit'
                             element: 'number_of_corners'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_list_element'
+                        id: '1ad4636492d54a1181076eb0be018957'
+                        key: {
+                            list_id: {
+                                id: 'dcb53bb5342e4a0aa4aabb738be16c76'
+                                key: {
+                                    name: 'x_1912467_f1now1_circuit'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'lap_record'
                         }
                     },
                     {
@@ -2405,6 +2549,29 @@ declare global {
                             name: 'x_1912467_f1now1_team'
                             element: 'team_id'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_list_element'
+                        id: '1c1f2602ce4443d394c4f57564d52db7'
+                        key: {
+                            list_id: {
+                                id: 'e6c9d5aa5b594d53a106e09df617a2df'
+                                key: {
+                                    name: 'x_1912467_f1now1_session_res'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'session'
                         }
                     },
                     {
@@ -2447,7 +2614,31 @@ declare global {
                     },
                     {
                         table: 'sys_ui_list_element'
+                        id: '1db6f350c45a47a79e15838c670cd407'
+                        key: {
+                            list_id: {
+                                id: 'e6c9d5aa5b594d53a106e09df617a2df'
+                                key: {
+                                    name: 'x_1912467_f1now1_session_res'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'team'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_list_element'
                         id: '1dd2d09b16b44fca9a8ec6770f27cf81'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: '3c70e157c7ea4d2086fd5328a496daa9'
@@ -2509,12 +2700,58 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_list_element'
+                        id: '1e4c33def7774ec395d38a1517deab39'
+                        key: {
+                            list_id: {
+                                id: 'e6c9d5aa5b594d53a106e09df617a2df'
+                                key: {
+                                    name: 'x_1912467_f1now1_session_res'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'grid'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '1e5233fb1c5f41ce8dcc311d188025a5'
                         key: {
                             name: 'var__m_sys_hub_flow_variable_3c827cc67efa43569b94b5f9db3363cf'
                             element: 'offsets'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_list_element'
+                        id: '1e63c24461ba436aacabcc6466150c16'
+                        key: {
+                            list_id: {
+                                id: 'dcb53bb5342e4a0aa4aabb738be16c76'
+                                key: {
+                                    name: 'x_1912467_f1now1_circuit'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'name'
                         }
                     },
                     {
@@ -2599,6 +2836,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: '1f75d0bbd34b4b72b1ffdc8f221627f4'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: '06a71da24e804438b952dc25ddb20858'
@@ -2634,6 +2872,29 @@ declare global {
                         key: {
                             document_key: '7b535f78937dcf14a03577f08bba1096'
                             variable: '5463df78937dcf14a03577f08bba1015'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_list_element'
+                        id: '20b5412984274838b619293f33d4d23c'
+                        key: {
+                            list_id: {
+                                id: '06a71da24e804438b952dc25ddb20858'
+                                key: {
+                                    name: 'x_1912467_f1now1_session'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'race'
                         }
                     },
                     {
@@ -2747,6 +3008,29 @@ declare global {
                         key: {
                             model: '0743d378937dcf14a03577f08bba10c8'
                             element: 'response_body'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_list_element'
+                        id: '2391f79b169d4f87a5080357e72b8227'
+                        key: {
+                            list_id: {
+                                id: 'dcb53bb5342e4a0aa4aabb738be16c76'
+                                key: {
+                                    name: 'x_1912467_f1now1_circuit'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'city'
                         }
                     },
                     {
@@ -2937,6 +3221,29 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_list_element'
+                        id: '278f3c39c4fe4c8e914bc0cf5d3b78f9'
+                        key: {
+                            list_id: {
+                                id: '84adee185bae4c4e8249ed026fa1a25f'
+                                key: {
+                                    name: 'x_1912467_f1now1_race'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'fastest_lap_time'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '279dd54300aa49e39f8787033b3c9070'
                         key: {
@@ -2982,6 +3289,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: '287d4fb000c643e6bf37d20c339bd667'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: '04d244e1f0584ea79a57f0c4234ad913'
@@ -3005,6 +3313,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: '28b5730eebbf42fb8b25caad9e28ccfe'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: '3c70e157c7ea4d2086fd5328a496daa9'
@@ -3128,6 +3437,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: '2a900e7216f945ed9162bbec498ebeab'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: 'b2c70d54937d8b14a03577f08bba1021'
@@ -3477,6 +3787,29 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_list_element'
+                        id: '30e175c2c6fb482e8439acac34076ffb'
+                        key: {
+                            list_id: {
+                                id: '3c70e157c7ea4d2086fd5328a496daa9'
+                                key: {
+                                    name: 'x_1912467_f1now1_driver_stand'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'team'
+                        }
+                    },
+                    {
                         table: 'sys_hub_action_output'
                         id: '30f7bd93a44b4009add6cc15101b4821'
                         key: {
@@ -3558,6 +3891,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: '32c78194937d8b14a03577f08bba102a'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: 'b2c70d54937d8b14a03577f08bba1021'
@@ -3571,6 +3905,29 @@ declare global {
                                 }
                             }
                             element: 'sys_updated_on'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_list_element'
+                        id: '32f1f8a3dcea427bac177dc9620d5c16'
+                        key: {
+                            list_id: {
+                                id: '04d244e1f0584ea79a57f0c4234ad913'
+                                key: {
+                                    name: 'x_1912467_f1now1_driver_season'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'driver'
                         }
                     },
                     {
@@ -3737,6 +4094,29 @@ declare global {
                         key: {
                             model: '7a539b78937dcf14a03577f08bba109f'
                             element: 'offset'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_list_element'
+                        id: '3682ad555f7043b6ab4d3c7da86e78b1'
+                        key: {
+                            list_id: {
+                                id: '3c70e157c7ea4d2086fd5328a496daa9'
+                                key: {
+                                    name: 'x_1912467_f1now1_driver_stand'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'position'
                         }
                     },
                     {
@@ -4065,6 +4445,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: '3ec78194937d8b14a03577f08bba102a'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: 'b2c70d54937d8b14a03577f08bba1021'
@@ -4326,12 +4707,58 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_list_element'
+                        id: '439db4a69b2e476eb3d0e5d29289ec99'
+                        key: {
+                            list_id: {
+                                id: 'aa9e3c1361aa4170b190e94ea5930f4e'
+                                key: {
+                                    name: 'x_1912467_f1now1_championship'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'year'
+                        }
+                    },
+                    {
                         table: 'sys_hub_step_ext_input'
                         id: '44435f38937dcf14a03577f08bba1019'
                         deleted: true
                         key: {
                             model: '84431f38937dcf14a03577f08bba10f2'
                             element: 'limit'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_list_element'
+                        id: '445aeed26a7747cebe877af264b8d09d'
+                        key: {
+                            list_id: {
+                                id: 'aa9e3c1361aa4170b190e94ea5930f4e'
+                                key: {
+                                    name: 'x_1912467_f1now1_championship'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'championship_id'
                         }
                     },
                     {
@@ -4383,6 +4810,29 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_list_element'
+                        id: '466dbe8757334983b9708762e29a103c'
+                        key: {
+                            list_id: {
+                                id: 'dcb53bb5342e4a0aa4aabb738be16c76'
+                                key: {
+                                    name: 'x_1912467_f1now1_circuit'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'country'
+                        }
+                    },
+                    {
                         table: 'sys_security_acl_role'
                         id: '46ee62316cac4dd1b967d89e37025080'
                         key: {
@@ -4412,6 +4862,29 @@ declare global {
                             field: 'script'
                             table: 'var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7'
                             id: '7a539b78937dcf14a03577f08bba109f'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_list_element'
+                        id: '47b1b0df81b247d391acbb4ecb390f61'
+                        key: {
+                            list_id: {
+                                id: 'dcb53bb5342e4a0aa4aabb738be16c76'
+                                key: {
+                                    name: 'x_1912467_f1now1_circuit'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'number_of_corners'
                         }
                     },
                     {
@@ -4497,6 +4970,29 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_list_element'
+                        id: '4a1582cb8a384b4888d508c7495ab29c'
+                        key: {
+                            list_id: {
+                                id: '84adee185bae4c4e8249ed026fa1a25f'
+                                key: {
+                                    name: 'x_1912467_f1now1_race'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'circuit'
+                        }
+                    },
+                    {
                         table: 'sys_hub_action_output'
                         id: '4aedb3d375a54615b9fa990521ff82d0'
                         key: {
@@ -4548,6 +5044,29 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_list_element'
+                        id: '4cf643e3c6f94f0cab9a2bc7b805dfe1'
+                        key: {
+                            list_id: {
+                                id: '04d244e1f0584ea79a57f0c4234ad913'
+                                key: {
+                                    name: 'x_1912467_f1now1_driver_season'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'team'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '4d43df38937dcf14a03577f08bba10aa'
                         key: {
@@ -4557,11 +5076,57 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_list_element'
+                        id: '4d609781c0914566a74e8e5a1de0b5cb'
+                        key: {
+                            list_id: {
+                                id: '99630478b28b4b55a274f11a22b081d0'
+                                key: {
+                                    name: 'x_1912467_f1now1_team'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'constructors_championships'
+                        }
+                    },
+                    {
                         table: 'sys_hub_action_input'
                         id: '4e4304df749c404eb8e2a393abb1cd1e'
                         key: {
                             model: '38acb7724e274e8e92a2510f51bcdf9e'
                             element: 'limit'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_list_element'
+                        id: '4e7de96563dc4f0a8587b04a52fd647b'
+                        key: {
+                            list_id: {
+                                id: 'dcb53bb5342e4a0aa4aabb738be16c76'
+                                key: {
+                                    name: 'x_1912467_f1now1_circuit'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'circuit_length'
                         }
                     },
                     {
@@ -4626,6 +5191,29 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_list_element'
+                        id: '5099cd34385c4427ae29eb8ca6c28ac2'
+                        key: {
+                            list_id: {
+                                id: 'e6c9d5aa5b594d53a106e09df617a2df'
+                                key: {
+                                    name: 'x_1912467_f1now1_session_res'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'driver'
+                        }
+                    },
+                    {
                         table: 'sys_hub_action_output'
                         id: '50fde398efe449b09b4a560c9c33260e'
                         key: {
@@ -4658,6 +5246,29 @@ declare global {
                             name: 'var__m_sys_hub_step_ext_output_4943df38937dcf14a03577f08bba10ed'
                             element: 'status_code'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_list_element'
+                        id: '5146bcd596aa4d819653dfcd2c7ba131'
+                        key: {
+                            list_id: {
+                                id: '3c70e157c7ea4d2086fd5328a496daa9'
+                                key: {
+                                    name: 'x_1912467_f1now1_driver_stand'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'driver'
                         }
                     },
                     {
@@ -4745,6 +5356,29 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_list_element'
+                        id: '543c9c00caaa4fce94c4f6253cb194a4'
+                        key: {
+                            list_id: {
+                                id: 'e6c9d5aa5b594d53a106e09df617a2df'
+                                key: {
+                                    name: 'x_1912467_f1now1_session_res'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'points'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '54639f78937dcf14a03577f08bba10fa'
                         key: {
@@ -4807,6 +5441,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: '558a4452672746fd956f32274834e35e'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: 'dcb53bb5342e4a0aa4aabb738be16c76'
@@ -4897,6 +5532,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: '578f8cbb4c244201ba419d5323d411c5'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: 'dcb53bb5342e4a0aa4aabb738be16c76'
@@ -5007,6 +5643,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: '59e717705ce1485083f6bedc747088c0'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: '84adee185bae4c4e8249ed026fa1a25f'
@@ -5025,6 +5662,29 @@ declare global {
                                 }
                             }
                             element: 'sys_updated_on'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_list_element'
+                        id: '5a28bcfc005745509c3c7220877a830e'
+                        key: {
+                            list_id: {
+                                id: '84adee185bae4c4e8249ed026fa1a25f'
+                                key: {
+                                    name: 'x_1912467_f1now1_race'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'round'
                         }
                     },
                     {
@@ -5306,6 +5966,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: '5fe6e2598984436386aa5304286445f0'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: 'e6c9d5aa5b594d53a106e09df617a2df'
@@ -5514,6 +6175,29 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_list_element'
+                        id: '657a60b2c0a94ba2ab9203e723731267'
+                        key: {
+                            list_id: {
+                                id: 'ae42bd37afb64ef4bdb27f1574f09336'
+                                key: {
+                                    name: 'x_1912467_f1now1_team_standing'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'position'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '65eecb46a39a4c72bf42bbbedd653401'
                         key: {
@@ -5568,6 +6252,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: '67f5b2009aab44a790de74fc08e3992b'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: 'aa9e3c1361aa4170b190e94ea5930f4e'
@@ -5632,6 +6317,29 @@ declare global {
                         key: {
                             model: '4f390851830b4445b03c0066c95120c7'
                             element: 'offsets'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_list_element'
+                        id: '68d3e32ac9cb4dffaae181c9a9f9245f'
+                        key: {
+                            list_id: {
+                                id: '06a71da24e804438b952dc25ddb20858'
+                                key: {
+                                    name: 'x_1912467_f1now1_session'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'time'
                         }
                     },
                     {
@@ -5915,6 +6623,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: '6e7386ae873040f085705ac37cebc4f4'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: 'aa9e3c1361aa4170b190e94ea5930f4e'
@@ -6099,6 +6808,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: '7286292e949246df920d4993a90c3d08'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: '99630478b28b4b55a274f11a22b081d0'
@@ -6249,11 +6959,57 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_list_element'
+                        id: '769b31f2d65946f596677e5164148a33'
+                        key: {
+                            list_id: {
+                                id: '06a71da24e804438b952dc25ddb20858'
+                                key: {
+                                    name: 'x_1912467_f1now1_session'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'session_type'
+                        }
+                    },
+                    {
                         table: 'sys_variable_value'
                         id: '76fba9ea3dfd4e419b202d2d8812ef2d'
                         key: {
                             document_key: '7b6095cb5b424e788771e6b84aaf2cfe'
                             variable: '42f2564b73031300440211d8faf6a777'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_list_element'
+                        id: '7718b33d3be34569ab82f3e6bb9bcff7'
+                        key: {
+                            list_id: {
+                                id: 'e6c9d5aa5b594d53a106e09df617a2df'
+                                key: {
+                                    name: 'x_1912467_f1now1_session_res'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'time'
                         }
                     },
                     {
@@ -6599,6 +7355,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: '802d6ff9729441adb1a0ec26e63a6249'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: '84adee185bae4c4e8249ed026fa1a25f'
@@ -6756,6 +7513,29 @@ declare global {
                                     name: 'x_1912467_f1now1.user'
                                 }
                             }
+                        }
+                    },
+                    {
+                        table: 'sys_ui_list_element'
+                        id: '844b7ed469074e01b558106da0b4bfa2'
+                        key: {
+                            list_id: {
+                                id: '04d244e1f0584ea79a57f0c4234ad913'
+                                key: {
+                                    name: 'x_1912467_f1now1_driver_season'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'championship'
                         }
                     },
                     {
@@ -6961,6 +7741,29 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_list_element'
+                        id: '8997d35736ca4cedb817c87d596c0f87'
+                        key: {
+                            list_id: {
+                                id: '3c70e157c7ea4d2086fd5328a496daa9'
+                                key: {
+                                    name: 'x_1912467_f1now1_driver_stand'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'wins'
+                        }
+                    },
+                    {
                         table: 'sys_hub_action_input'
                         id: '8a69d62be4494381b3cab0887dbd735d'
                         key: {
@@ -6996,6 +7799,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: '8adbd6d674424f7ba12670c0804ebe2d'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: 'ae42bd37afb64ef4bdb27f1574f09336'
@@ -7041,6 +7845,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: '8b10457c32ab45bf8d204cfd126e8e98'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: '04d244e1f0584ea79a57f0c4234ad913'
@@ -7166,6 +7971,29 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_list_element'
+                        id: '8d914f239f1a4bba9b5ca036eb4edcd0'
+                        key: {
+                            list_id: {
+                                id: 'b2c70d54937d8b14a03577f08bba1021'
+                                key: {
+                                    name: 'x_1912467_f1now1_driver'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'surname'
+                        }
+                    },
+                    {
                         table: 'sys_variable_value'
                         id: '8e12d47073bc4da5b70292bcb41d85d4'
                         key: {
@@ -7213,6 +8041,29 @@ declare global {
                                 }
                             }
                             sys_domain: 'global'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_list_element'
+                        id: '8fd7ee0d2e1742468f7ecbc6d8a798a9'
+                        key: {
+                            list_id: {
+                                id: 'b2c70d54937d8b14a03577f08bba1021'
+                                key: {
+                                    name: 'x_1912467_f1now1_driver'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'nationality'
                         }
                     },
                     {
@@ -7278,6 +8129,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: '90f0846162e143aca7dab5dc4438a801'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: 'ae42bd37afb64ef4bdb27f1574f09336'
@@ -7327,6 +8179,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: '925f91e7d0cc467995d8f526b0c9b919'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: 'ae42bd37afb64ef4bdb27f1574f09336'
@@ -7406,6 +8259,29 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_list_element'
+                        id: '933fad706ea347438b568fb9c8dabf1d'
+                        key: {
+                            list_id: {
+                                id: 'aa9e3c1361aa4170b190e94ea5930f4e'
+                                key: {
+                                    name: 'x_1912467_f1now1_championship'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'name'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '9355c642d67048b590e19cf387270733'
                         key: {
@@ -7434,6 +8310,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: '942f63e0b73a49aea391b97e866e9d04'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: '04d244e1f0584ea79a57f0c4234ad913'
@@ -7842,6 +8719,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: '9cf8a066e7fc4f8ea4f2970ed6a86c7d'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: '84adee185bae4c4e8249ed026fa1a25f'
@@ -7968,6 +8846,29 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_list_element'
+                        id: '9fefa06432b74b5f9e3e23f2ccd965d9'
+                        key: {
+                            list_id: {
+                                id: '3c70e157c7ea4d2086fd5328a496daa9'
+                                key: {
+                                    name: 'x_1912467_f1now1_driver_stand'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'championship'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '9ff33b7ba90346e3a3708f962a1b497a'
                         key: {
@@ -8009,6 +8910,29 @@ declare global {
                         key: {
                             document_key: '9706cdfca95a4f67a83a5de14e5f56c5'
                             variable: '74315b04b3201300176b051a16a8dc2b'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_list_element'
+                        id: 'a0d7028a6f824379a3d636e070194d78'
+                        key: {
+                            list_id: {
+                                id: '99630478b28b4b55a274f11a22b081d0'
+                                key: {
+                                    name: 'x_1912467_f1now1_team'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'name'
                         }
                     },
                     {
@@ -8126,6 +9050,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: 'a248d3db24bb419f9418e5d4abcb3cda'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: '04d244e1f0584ea79a57f0c4234ad913'
@@ -8404,6 +9329,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: 'a78f7f9f490146b8adad5002b0df2435'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: 'e6c9d5aa5b594d53a106e09df617a2df'
@@ -8436,6 +9362,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: 'a851e616e5f54860ae9e3e33841ced7b'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: '3c70e157c7ea4d2086fd5328a496daa9'
@@ -8740,6 +9667,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: 'ad92c7e80ec642469cb1d668d9de7033'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: 'ae42bd37afb64ef4bdb27f1574f09336'
@@ -9187,6 +10115,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: 'b562b2c0264f4386a8411672294c1903'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: '06a71da24e804438b952dc25ddb20858'
@@ -9261,6 +10190,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: 'b6c78194937d8b14a03577f08bba102a'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: 'b2c70d54937d8b14a03577f08bba1021'
@@ -9615,6 +10545,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: 'be0b31c2f49d405cb2aab916846152ad'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: '99630478b28b4b55a274f11a22b081d0'
@@ -9672,6 +10603,29 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_list_element'
+                        id: 'be76aee61d5f4850943ba4848822e92f'
+                        key: {
+                            list_id: {
+                                id: '06a71da24e804438b952dc25ddb20858'
+                                key: {
+                                    name: 'x_1912467_f1now1_session'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'date'
+                        }
+                    },
+                    {
                         table: 'sys_hub_action_input'
                         id: 'be93fdd04acb47538ae044c6f923105e'
                         key: {
@@ -9682,6 +10636,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: 'be9e5be7067b4fe49862cec99166be12'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: '99630478b28b4b55a274f11a22b081d0'
@@ -9749,6 +10704,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: 'bf5d1db57ad9433c904110be6afa828b'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: 'e6c9d5aa5b594d53a106e09df617a2df'
@@ -9928,6 +10884,29 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_list_element'
+                        id: 'c3b9cd87afd949fd9a473421dab7d2cb'
+                        key: {
+                            list_id: {
+                                id: 'e6c9d5aa5b594d53a106e09df617a2df'
+                                key: {
+                                    name: 'x_1912467_f1now1_session_res'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'position'
+                        }
+                    },
+                    {
                         table: 'sys_variable_value'
                         id: 'c42790aa7b29492bab4604dc930ac280'
                         key: {
@@ -10009,6 +10988,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: 'c492637e8534433c9d7500be9e6077de'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: '06a71da24e804438b952dc25ddb20858'
@@ -10453,6 +11433,29 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_list_element'
+                        id: 'cf80559b305149e2bd82b16851c39a79'
+                        key: {
+                            list_id: {
+                                id: 'ae42bd37afb64ef4bdb27f1574f09336'
+                                key: {
+                                    name: 'x_1912467_f1now1_team_standing'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'wins'
+                        }
+                    },
+                    {
                         table: 'sys_hub_step_ext_output'
                         id: 'cfcffda83bbc4daf995f2ed1f50cdb00'
                         key: {
@@ -10474,6 +11477,52 @@ declare global {
                         key: {
                             document_key: 'f0e335f0b2f94789919256258623ab35'
                             variable: '989d9e235324220002c6435723dc3484'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_list_element'
+                        id: 'd1424cde75224a34938eda04c38b63cc'
+                        key: {
+                            list_id: {
+                                id: '99630478b28b4b55a274f11a22b081d0'
+                                key: {
+                                    name: 'x_1912467_f1now1_team'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'first_appearance'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_list_element'
+                        id: 'd1891a824b75459c9e4a83e823181d53'
+                        key: {
+                            list_id: {
+                                id: '84adee185bae4c4e8249ed026fa1a25f'
+                                key: {
+                                    name: 'x_1912467_f1now1_race'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'name'
                         }
                     },
                     {
@@ -10693,6 +11742,29 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_list_element'
+                        id: 'd71681bec629464589188e2799166ecc'
+                        key: {
+                            list_id: {
+                                id: 'b2c70d54937d8b14a03577f08bba1021'
+                                key: {
+                                    name: 'x_1912467_f1now1_driver'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'date_of_birth'
+                        }
+                    },
+                    {
                         table: 'sys_security_acl_role'
                         id: 'd73bd165149e49d09d1a11d97b738e6d'
                         key: {
@@ -10751,6 +11823,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: 'd7ec04f4c5f54e4eb8584f16cec7bb53'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: 'aa9e3c1361aa4170b190e94ea5930f4e'
@@ -10831,6 +11904,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: 'd90f9ae777e84729a35289ab0ce0d6d5'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: 'ae42bd37afb64ef4bdb27f1574f09336'
@@ -10973,6 +12047,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: 'dbec290d181e4439b75dff001df614c1'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: '06a71da24e804438b952dc25ddb20858'
@@ -11328,6 +12403,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: 'e11158c3b3134404bba8a28c2f5bfd76'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: '99630478b28b4b55a274f11a22b081d0'
@@ -11351,6 +12427,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: 'e1213e6145604a529f584cd81a4b66d9'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: '3c70e157c7ea4d2086fd5328a496daa9'
@@ -11399,6 +12476,29 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_list_element'
+                        id: 'e1594fc9d56e4eafad6b4daf62a42a3b'
+                        key: {
+                            list_id: {
+                                id: '84adee185bae4c4e8249ed026fa1a25f'
+                                key: {
+                                    name: 'x_1912467_f1now1_race'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'laps'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: 'e1648c45f1d842a9a8c849ec8a169c80'
                         key: {
@@ -11418,6 +12518,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: 'e20eda39fa064b5ba007d734ed7ceef2'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: 'dcb53bb5342e4a0aa4aabb738be16c76'
@@ -11566,6 +12667,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: 'e4c3113862a5493f98ce790624097a5f'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: 'dcb53bb5342e4a0aa4aabb738be16c76'
@@ -11807,6 +12909,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: 'e93a2edd4ba649d3892ff2821fdf2079'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: '84adee185bae4c4e8249ed026fa1a25f'
@@ -11935,6 +13038,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: 'ebbb0edddad04bb9af4fc6dfdc94d004'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: '3c70e157c7ea4d2086fd5328a496daa9'
@@ -12189,6 +13293,29 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_list_element'
+                        id: 'f0c08ad2d2214d0597fcc721c3319404'
+                        key: {
+                            list_id: {
+                                id: '3c70e157c7ea4d2086fd5328a496daa9'
+                                key: {
+                                    name: 'x_1912467_f1now1_driver_stand'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'points'
+                        }
+                    },
+                    {
                         table: 'sys_hub_step_ext_input'
                         id: 'f0d6afd485414419a40a24bfca98d257'
                         key: {
@@ -12253,6 +13380,29 @@ declare global {
                         key: {
                             model: 'cd9f0cb7082941c88ca2faf446204ba0'
                             element: 'team_id'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_list_element'
+                        id: 'f356b6e7a542421aafdbbca7c3539725'
+                        key: {
+                            list_id: {
+                                id: 'aa9e3c1361aa4170b190e94ea5930f4e'
+                                key: {
+                                    name: 'x_1912467_f1now1_championship'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'url'
                         }
                     },
                     {
@@ -12383,7 +13533,31 @@ declare global {
                     },
                     {
                         table: 'sys_ui_list_element'
+                        id: 'f67deb2faa6a48e08f29acfdfa977bc9'
+                        key: {
+                            list_id: {
+                                id: '84adee185bae4c4e8249ed026fa1a25f'
+                                key: {
+                                    name: 'x_1912467_f1now1_race'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'championship'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_list_element'
                         id: 'f6c994e366bd432ba8dddbf9ce6d17d5'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: 'aa9e3c1361aa4170b190e94ea5930f4e'
@@ -12480,6 +13654,29 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_list_element'
+                        id: 'f9c6a53b548646d0af80bcd1924002ff'
+                        key: {
+                            list_id: {
+                                id: 'ae42bd37afb64ef4bdb27f1574f09336'
+                                key: {
+                                    name: 'x_1912467_f1now1_team_standing'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'championship'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: 'f9e971dbfed747679018baa560b86586'
                         key: {
@@ -12499,6 +13696,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: 'fa5912b7b4de4898a89c9e8e91e78d6a'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: 'e6c9d5aa5b594d53a106e09df617a2df'
@@ -12534,6 +13732,29 @@ declare global {
                         key: {
                             model: '38acb7724e274e8e92a2510f51bcdf9e'
                             element: '__action_status__'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_list_element'
+                        id: 'fb1483e6ffc54cdb886678c36029625a'
+                        key: {
+                            list_id: {
+                                id: 'ae42bd37afb64ef4bdb27f1574f09336'
+                                key: {
+                                    name: 'x_1912467_f1now1_team_standing'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'points'
                         }
                     },
                     {
@@ -12751,6 +13972,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: 'fffe6f122abe47a0b2ef9d1777b69be2'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: 'e6c9d5aa5b594d53a106e09df617a2df'
