@@ -505,6 +505,10 @@ declare global {
                         table: 'sys_app_module'
                         id: 'd2117aa445194e83a69a67fa81132b73'
                     }
+                    'f1now-module-driver': {
+                        table: 'sys_app_module'
+                        id: '5d5164b1f79a418f975d1d09e5e15364'
+                    }
                     'f1now-module-driver-standing': {
                         table: 'sys_app_module'
                         id: 'b4dde4242a8d4a9f8840adf5890a8862'
@@ -2554,6 +2558,29 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_list_element'
+                        id: '2a900e7216f945ed9162bbec498ebeab'
+                        key: {
+                            list_id: {
+                                id: 'b2c70d54937d8b14a03577f08bba1021'
+                                key: {
+                                    name: 'x_1912467_f1now1_driver'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'driver_id'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '2ab885c7360f4c639333e617328c8b80'
                         key: {
@@ -3332,6 +3359,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: '3ec78194937d8b14a03577f08bba1028'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: 'b2c70d54937d8b14a03577f08bba1021'
@@ -7963,6 +7991,29 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_list_element'
+                        id: 'b7e5f0892d5a4cf3b7be781629e73d47'
+                        key: {
+                            list_id: {
+                                id: 'b2c70d54937d8b14a03577f08bba1021'
+                                key: {
+                                    name: 'x_1912467_f1now1_driver'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'name'
+                        }
+                    },
+                    {
                         table: 'sys_hub_step_ext_input'
                         id: 'b7f15b1bb3ed45769fb25687c338361c'
                         key: {
@@ -8058,6 +8109,7 @@ declare global {
                     {
                         table: 'sys_ui_list_element'
                         id: 'bac78194937d8b14a03577f08bba1029'
+                        deleted: true
                         key: {
                             list_id: {
                                 id: 'b2c70d54937d8b14a03577f08bba1021'
@@ -10058,6 +10110,29 @@ declare global {
                             name: 'var__m_sys_hub_action_output_65f36041c90c47b9ba838a723d03adc8'
                             element: 'response_body'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_list_element'
+                        id: 'e76814826e804225a6744920e8b5518b'
+                        key: {
+                            list_id: {
+                                id: 'b2c70d54937d8b14a03577f08bba1021'
+                                key: {
+                                    name: 'x_1912467_f1now1_driver'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'number'
                         }
                     },
                     {

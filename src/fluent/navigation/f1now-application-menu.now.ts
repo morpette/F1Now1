@@ -78,6 +78,19 @@ export const f1NowModuleSessionResult = Record({
     },
 })
 
+export const f1NowModuleDriver = Record({
+    $id: Now.ID['f1now-module-driver'],
+    table: 'sys_app_module',
+    data: {
+        title: 'Driver',
+        application: f1NowApplicationMenu,
+        link_type: 'LIST',
+        name: 'x_1912467_f1now1_driver',
+        active: true,
+        order: 550,
+    },
+})
+
 export const f1NowModuleTeam = Record({
     $id: Now.ID['f1now-module-team'],
     table: 'sys_app_module',
