@@ -1,4 +1,4 @@
-import { DateColumn, IntegerColumn, StringColumn, Table } from '@servicenow/sdk/core'
+import { DateColumn, IntegerColumn, StringColumn, Table, UrlColumn } from '@servicenow/sdk/core'
 
 export const x_1912467_f1now1_driver = Table({
     actions: ['read', 'update', 'create'],
@@ -26,5 +26,6 @@ export const x_1912467_f1now1_driver = Table({
         number: IntegerColumn({ label: 'Number' }),
         nationality: StringColumn({ label: 'Nationality', maxLength: 50 }),
         date_of_birth: DateColumn({ label: 'Date of Birth' }),
+        url: UrlColumn({ label: 'URL' }),
     },
 })

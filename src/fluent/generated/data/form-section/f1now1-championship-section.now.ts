@@ -1,11 +1,11 @@
 import { Record } from '@servicenow/sdk/core'
 
 Record({
-    $id: Now.ID['fec78194937d8b14a03577f08bba101e'],
+    $id: Now.ID['f1now1-championship-section'],
     table: 'sys_ui_section',
     data: {
         header: false,
-        name: 'x_1912467_f1now1_driver',
+        name: 'x_1912467_f1now1_championship',
         sys_domain: 'global',
         title: true,
         view: 'NULL',
