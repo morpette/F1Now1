@@ -133,6 +133,10 @@ declare global {
                         table: 'sys_hub_action_type_definition'
                         id: '558a2106de4d473986428bcc926279ab'
                     }
+                    'f1-action-get-purge-core-tables-vars': {
+                        table: 'sys_hub_action_instance_v2'
+                        id: '5de625f9d4f34e2e93a5933924bb178e'
+                    }
                     'f1-action-get-team-drivers-by-season': {
                         table: 'sys_hub_action_type_definition'
                         id: 'b7c55fe3a78b41fa81fcccdd79fe7130'
@@ -205,6 +209,10 @@ declare global {
                         table: 'sc_cat_item'
                         id: '18736f47857e4208989aa733e2aa2d9a'
                     }
+                    'f1-catalog-purge-core-tables': {
+                        table: 'sc_cat_item'
+                        id: '42fd6754022e4d9cae32af37a3ab1e96'
+                    }
                     'f1-flow-populate-all-championships': {
                         table: 'sys_hub_flow'
                         id: '43d9708a32de4ec6b6aa697f6b2ccaa2'
@@ -220,6 +228,10 @@ declare global {
                     'f1-flow-populate-all-teams': {
                         table: 'sys_hub_flow'
                         id: 'e3a9863facf2486bb1616dd85241fc9a'
+                    }
+                    'f1-flow-purge-core-tables': {
+                        table: 'sys_hub_flow'
+                        id: 'b0b46528c5a14aef8ac4819d8e7f4112'
                     }
                     'f1-flowlogic-championship-page-empty': {
                         table: 'sys_hub_flow_logic_instance_v2'
@@ -291,9 +303,21 @@ declare global {
                         table: 'sys_hub_flow_logic_instance_v2'
                         id: '280d6e0cc1e044c1bcf96e57649a0673'
                     }
+                    'f1-flowlogic-for-each-championship-to-delete': {
+                        table: 'sys_hub_flow_logic_instance_v2'
+                        id: '4b45624785f54838a52e05d7c945c663'
+                    }
                     'f1-flowlogic-for-each-circuit-page': {
                         table: 'sys_hub_flow_logic_instance_v2'
                         id: '4dc6bb3562d84d488deb85c43b63702d'
+                    }
+                    'f1-flowlogic-for-each-circuit-to-delete': {
+                        table: 'sys_hub_flow_logic_instance_v2'
+                        id: '9e2ff57706b64f2280175679497536a2'
+                    }
+                    'f1-flowlogic-for-each-driver-to-delete': {
+                        table: 'sys_hub_flow_logic_instance_v2'
+                        id: '6575d8cf39a240c4ba0f0f62909fcde0'
                     }
                     'f1-flowlogic-for-each-page': {
                         table: 'sys_hub_flow_logic_instance_v2'
@@ -302,6 +326,10 @@ declare global {
                     'f1-flowlogic-for-each-team-page': {
                         table: 'sys_hub_flow_logic_instance_v2'
                         id: '0948d1a0763741b5af4bbcbff09548bd'
+                    }
+                    'f1-flowlogic-for-each-team-to-delete': {
+                        table: 'sys_hub_flow_logic_instance_v2'
+                        id: 'f70299728adb48d688ab49d3947222d1'
                     }
                     'f1-flowlogic-page-empty': {
                         table: 'sys_hub_flow_logic_instance_v2'
@@ -314,6 +342,22 @@ declare global {
                     'f1-flowlogic-page-fetch-succeeded': {
                         table: 'sys_hub_flow_logic_instance_v2'
                         id: '94a75b23a3ca4987853b9124b44f086a'
+                    }
+                    'f1-flowlogic-purge-championships-selected': {
+                        table: 'sys_hub_flow_logic_instance_v2'
+                        id: '70eced85855349d8b9a83944ba582995'
+                    }
+                    'f1-flowlogic-purge-circuits-selected': {
+                        table: 'sys_hub_flow_logic_instance_v2'
+                        id: 'b56aae0d706846b3abb12d5b99b9ead3'
+                    }
+                    'f1-flowlogic-purge-drivers-selected': {
+                        table: 'sys_hub_flow_logic_instance_v2'
+                        id: '00a4f65ef5a34a77a50ee2a34c6324b3'
+                    }
+                    'f1-flowlogic-purge-teams-selected': {
+                        table: 'sys_hub_flow_logic_instance_v2'
+                        id: '8ff2b7ea2403469ab44ae3c5ab881076'
                     }
                     'f1-flowlogic-seed-championship-page-offsets': {
                         table: 'sys_hub_flow_logic_instance_v2'
@@ -342,6 +386,22 @@ declare global {
                     'f1-flowlogic-team-page-fetch-succeeded': {
                         table: 'sys_hub_flow_logic_instance_v2'
                         id: 'fdf3a0a32f5f49bf9e2071813910c6f0'
+                    }
+                    'f1-flowstep-delete-championship': {
+                        table: 'sys_hub_action_instance_v2'
+                        id: '3942c1adcde5452bbbd2fd3734c86465'
+                    }
+                    'f1-flowstep-delete-circuit': {
+                        table: 'sys_hub_action_instance_v2'
+                        id: 'be0f96b01b1040308e7fe413d7a805d3'
+                    }
+                    'f1-flowstep-delete-driver': {
+                        table: 'sys_hub_action_instance_v2'
+                        id: '8673d4cad4274f86a4d9b12e931e654d'
+                    }
+                    'f1-flowstep-delete-team': {
+                        table: 'sys_hub_action_instance_v2'
+                        id: '94f0a7441d104f3a8a872dd9dc3eb427'
                     }
                     'f1-flowstep-fetch-all-drivers': {
                         table: 'sys_hub_action_instance_v2'
@@ -384,6 +444,22 @@ declare global {
                     'f1-flowstep-log-team-page-fetch-failure': {
                         table: 'sys_hub_action_instance_v2'
                         id: '0e7ec8f908304ef6bf792ac7821492a9'
+                    }
+                    'f1-flowstep-lookup-championships-to-purge': {
+                        table: 'sys_hub_action_instance_v2'
+                        id: '7f406617f36641d0ad62bb8c437ef1bf'
+                    }
+                    'f1-flowstep-lookup-circuits-to-purge': {
+                        table: 'sys_hub_action_instance_v2'
+                        id: '817d73a7c49745a29d76fc4a337b8df6'
+                    }
+                    'f1-flowstep-lookup-drivers-to-purge': {
+                        table: 'sys_hub_action_instance_v2'
+                        id: '292395ea05ef40b58a0a4e72742231d3'
+                    }
+                    'f1-flowstep-lookup-teams-to-purge': {
+                        table: 'sys_hub_action_instance_v2'
+                        id: '69612a58dbca4e02a63d981a3a62a1c6'
                     }
                     'f1-flowstep-upsert-all-drivers': {
                         table: 'sys_hub_action_instance_v2'
@@ -806,6 +882,10 @@ declare global {
                         table: 'sys_hub_trigger_instance_v2'
                         id: '59428529a8134e12a81f7e8a6ec6cd4d'
                     }
+                    'f1-trigger-purge-core-tables': {
+                        table: 'sys_hub_trigger_instance_v2'
+                        id: '08b732024ac644258253d362a27d57fb'
+                    }
                     'f1-uc-admins-only': {
                         table: 'user_criteria'
                         id: '6e248bf8e001409183abfd83437f7b82'
@@ -1166,6 +1246,15 @@ declare global {
                         key: {
                             model: 'b443df38937dcf14a03577f08bba107a'
                             element: 'offset'
+                        }
+                    },
+                    {
+                        table: 'item_option_new'
+                        id: '026633d976f347fdb362b74c2d915167'
+                        key: {
+                            cat_item: '42fd6754022e4d9cae32af37a3ab1e96'
+                            variable_set: 'NULL'
+                            name: 'purge_teams'
                         }
                     },
                     {
@@ -1900,6 +1989,15 @@ declare global {
                         key: {
                             document_key: '3e810ebe66ba406d95ae2f03e548972f'
                             variable: '989d9e235324220002c6435723dc3484'
+                        }
+                    },
+                    {
+                        table: 'item_option_new'
+                        id: '0e8222f4399f45d7942e37cb8c31c862'
+                        key: {
+                            cat_item: '42fd6754022e4d9cae32af37a3ab1e96'
+                            variable_set: 'NULL'
+                            name: 'purge_drivers'
                         }
                     },
                     {
@@ -5305,6 +5403,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sc_cat_item_user_criteria_mtom'
+                        id: '521d4c48b7e4488eacc56037faecd879'
+                        key: {
+                            sc_cat_item: '42fd6754022e4d9cae32af37a3ab1e96'
+                            user_criteria: '6e248bf8e001409183abfd83437f7b82'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '52439378937dcf14a03577f08bba108c'
                         deleted: true
@@ -8577,6 +8683,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'item_option_new'
+                        id: '98ea037cc6ed4e14b945a908fcc9e6ff'
+                        key: {
+                            cat_item: '42fd6754022e4d9cae32af37a3ab1e96'
+                            variable_set: 'NULL'
+                            name: 'purge_championships'
+                        }
+                    },
+                    {
                         table: 'sys_hub_step_ext_output'
                         id: '98f521528330458c9e882d71ee21d620'
                         key: {
@@ -10081,6 +10196,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sc_cat_item_category'
+                        id: 'b442a672005c42368219a22114282a03'
+                        key: {
+                            sc_cat_item: '42fd6754022e4d9cae32af37a3ab1e96'
+                            sc_category: 'd67c446ec0a80165000335aa37eafbc1'
+                        }
+                    },
+                    {
                         table: 'sys_hub_action_output'
                         id: 'b4539778937dcf14a03577f08bba10b2'
                         key: {
@@ -11099,6 +11222,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sc_cat_item_catalog'
+                        id: 'c72613fce82d4ced906a9c2b63ff5d22'
+                        key: {
+                            sc_cat_item: '42fd6754022e4d9cae32af37a3ab1e96'
+                            sc_catalog: '742ce428d7211100f2d224837e61036d'
+                        }
+                    },
+                    {
                         table: 'sys_hub_action_output'
                         id: 'c7319cf43a8942728ee316e19d76b7a0'
                         key: {
@@ -11802,6 +11933,15 @@ declare global {
                         key: {
                             document_key: '62535b78937dcf14a03577f08bba10e7'
                             variable: 'c353db78937dcf14a03577f08bba108b'
+                        }
+                    },
+                    {
+                        table: 'item_option_new'
+                        id: 'd791a9bddae046dd8503ea67b3dd552e'
+                        key: {
+                            cat_item: '42fd6754022e4d9cae32af37a3ab1e96'
+                            variable_set: 'NULL'
+                            name: 'purge_circuits'
                         }
                     },
                     {
