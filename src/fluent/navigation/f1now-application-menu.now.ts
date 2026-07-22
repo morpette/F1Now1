@@ -3,7 +3,9 @@ import { ApplicationMenu, Record } from '@servicenow/sdk/core'
 
 /**
  * F1Now application menu — top-level navigator entry with one module per
- * tracking table, so each table has a "List" link in the sidebar.
+ * tracking table, grouped under "Core Tables" (Championship, Circuit,
+ * Driver, Team) and "Reference Tables" (everything that depends on them)
+ * separators.
  */
 export const f1NowApplicationMenu = ApplicationMenu({
     $id: Now.ID['f1now-app-menu'],
@@ -11,6 +13,18 @@ export const f1NowApplicationMenu = ApplicationMenu({
     hint: 'F1Now Formula 1 tracking',
     description: 'Navigate the F1Now Formula 1 tracking tables.',
     active: true,
+})
+
+export const f1NowModuleSeparatorCoreTables = Record({
+    $id: Now.ID['f1now-module-separator-core-tables'],
+    table: 'sys_app_module',
+    data: {
+        title: 'Core Tables',
+        application: f1NowApplicationMenu,
+        link_type: 'SEPARATOR',
+        active: true,
+        order: 100,
+    },
 })
 
 export const f1NowModuleChampionship = Record({
@@ -22,7 +36,7 @@ export const f1NowModuleChampionship = Record({
         link_type: 'LIST',
         name: 'x_1912467_f1now1_championship',
         active: true,
-        order: 100,
+        order: 110,
     },
 })
 
@@ -34,6 +48,44 @@ export const f1NowModuleCircuit = Record({
         application: f1NowApplicationMenu,
         link_type: 'LIST',
         name: 'x_1912467_f1now1_circuit',
+        active: true,
+        order: 120,
+    },
+})
+
+export const f1NowModuleDriver = Record({
+    $id: Now.ID['f1now-module-driver'],
+    table: 'sys_app_module',
+    data: {
+        title: 'Driver',
+        application: f1NowApplicationMenu,
+        link_type: 'LIST',
+        name: 'x_1912467_f1now1_driver',
+        active: true,
+        order: 130,
+    },
+})
+
+export const f1NowModuleTeam = Record({
+    $id: Now.ID['f1now-module-team'],
+    table: 'sys_app_module',
+    data: {
+        title: 'Team',
+        application: f1NowApplicationMenu,
+        link_type: 'LIST',
+        name: 'x_1912467_f1now1_team',
+        active: true,
+        order: 140,
+    },
+})
+
+export const f1NowModuleSeparatorReferenceTables = Record({
+    $id: Now.ID['f1now-module-separator-reference-tables'],
+    table: 'sys_app_module',
+    data: {
+        title: 'Reference Tables',
+        application: f1NowApplicationMenu,
+        link_type: 'SEPARATOR',
         active: true,
         order: 200,
     },
@@ -48,7 +100,7 @@ export const f1NowModuleRace = Record({
         link_type: 'LIST',
         name: 'x_1912467_f1now1_race',
         active: true,
-        order: 300,
+        order: 210,
     },
 })
 
@@ -61,7 +113,7 @@ export const f1NowModuleSession = Record({
         link_type: 'LIST',
         name: 'x_1912467_f1now1_session',
         active: true,
-        order: 400,
+        order: 220,
     },
 })
 
@@ -74,33 +126,7 @@ export const f1NowModuleSessionResult = Record({
         link_type: 'LIST',
         name: 'x_1912467_f1now1_session_res',
         active: true,
-        order: 500,
-    },
-})
-
-export const f1NowModuleDriver = Record({
-    $id: Now.ID['f1now-module-driver'],
-    table: 'sys_app_module',
-    data: {
-        title: 'Driver',
-        application: f1NowApplicationMenu,
-        link_type: 'LIST',
-        name: 'x_1912467_f1now1_driver',
-        active: true,
-        order: 550,
-    },
-})
-
-export const f1NowModuleTeam = Record({
-    $id: Now.ID['f1now-module-team'],
-    table: 'sys_app_module',
-    data: {
-        title: 'Team',
-        application: f1NowApplicationMenu,
-        link_type: 'LIST',
-        name: 'x_1912467_f1now1_team',
-        active: true,
-        order: 600,
+        order: 230,
     },
 })
 
@@ -113,7 +139,7 @@ export const f1NowModuleDriverStanding = Record({
         link_type: 'LIST',
         name: 'x_1912467_f1now1_driver_stand',
         active: true,
-        order: 700,
+        order: 240,
     },
 })
 
@@ -126,7 +152,7 @@ export const f1NowModuleConstructorStanding = Record({
         link_type: 'LIST',
         name: 'x_1912467_f1now1_team_standing',
         active: true,
-        order: 800,
+        order: 250,
     },
 })
 
@@ -139,6 +165,6 @@ export const f1NowModuleDriverTeamSeason = Record({
         link_type: 'LIST',
         name: 'x_1912467_f1now1_driver_season',
         active: true,
-        order: 900,
+        order: 260,
     },
 })

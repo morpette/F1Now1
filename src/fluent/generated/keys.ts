@@ -922,6 +922,14 @@ declare global {
                         table: 'sys_app_module'
                         id: '83ca95ac7d8e4c7aba4d13f6a2f9859f'
                     }
+                    'f1now-module-separator-core-tables': {
+                        table: 'sys_app_module'
+                        id: 'd576f976e89d4ac8ba7ffa0fbb2e9697'
+                    }
+                    'f1now-module-separator-reference-tables': {
+                        table: 'sys_app_module'
+                        id: '705c848f939440f0887e827aaef9d3cc'
+                    }
                     'f1now-module-session': {
                         table: 'sys_app_module'
                         id: '2f0f3b384138436c9f09eec6903acb82'
