@@ -153,6 +153,10 @@ declare global {
                         table: 'sys_hub_action_type_definition'
                         id: 'bfde71a12a2d4284b539201139555739'
                     }
+                    'f1-action-upsert-driver-team-seasons': {
+                        table: 'sys_hub_action_type_definition'
+                        id: '6275ba163e314dec8602abc1af64525c'
+                    }
                     'f1-action-upsert-drivers': {
                         table: 'sys_hub_action_type_definition'
                         id: 'fc78f33d7d59419994ce561422b08456'
@@ -201,6 +205,10 @@ declare global {
                         table: 'sc_cat_item'
                         id: '939073232b65403c97a5e4bf45b690c9'
                     }
+                    'f1-catalog-populate-all-driver-team-seasons': {
+                        table: 'sc_cat_item'
+                        id: '6e31292f7585411188a19a2ed9d5cb81'
+                    }
                     'f1-catalog-populate-all-drivers': {
                         table: 'sc_cat_item'
                         id: '8f5d7f44650f46b0b8ed966675381dd8'
@@ -220,6 +228,10 @@ declare global {
                     'f1-flow-populate-all-circuits': {
                         table: 'sys_hub_flow'
                         id: '3c827cc67efa43569b94b5f9db3363cf'
+                    }
+                    'f1-flow-populate-all-driver-team-seasons': {
+                        table: 'sys_hub_flow'
+                        id: '088a111b771045d38df380d90b347008'
                     }
                     'f1-flow-populate-all-drivers': {
                         table: 'sys_hub_flow'
@@ -256,6 +268,14 @@ declare global {
                     'f1-flowlogic-circuit-page-fetch-succeeded': {
                         table: 'sys_hub_flow_logic_instance_v2'
                         id: '3901dff2b39b489cb8c8c209ea2e5a97'
+                    }
+                    'f1-flowlogic-driver-season-fetch-failed': {
+                        table: 'sys_hub_flow_logic_instance_v2'
+                        id: '3531816c3a664d42ad9dba004e3c1653'
+                    }
+                    'f1-flowlogic-driver-season-fetch-succeeded': {
+                        table: 'sys_hub_flow_logic_instance_v2'
+                        id: 'acc3c6cfa41f4a1783b966fedfa50db9'
                     }
                     'f1-flowlogic-exit-loop-championship-empty-page': {
                         table: 'sys_hub_flow_logic_instance_v2'
@@ -298,6 +318,10 @@ declare global {
                         table: 'sys_hub_flow_logic_instance_v2'
                         id: 'd2453400a38d42d28f2f72b8b5cb0185'
                         deleted: true
+                    }
+                    'f1-flowlogic-for-each-championship-driver-team-season': {
+                        table: 'sys_hub_flow_logic_instance_v2'
+                        id: '33b0870255b44c249a943d19739bf222'
                     }
                     'f1-flowlogic-for-each-championship-page': {
                         table: 'sys_hub_flow_logic_instance_v2'
@@ -416,6 +440,10 @@ declare global {
                         table: 'sys_hub_action_instance_v2'
                         id: '00d38bb28d8b493f8f705ee4dff0ca56'
                     }
+                    'f1-flowstep-fetch-drivers-for-season': {
+                        table: 'sys_hub_action_instance_v2'
+                        id: '4151c179bcbd429082afbd7d29634fde'
+                    }
                     'f1-flowstep-fetch-drivers-page': {
                         table: 'sys_hub_action_instance_v2'
                         id: 'bb002ca2fe5b427ea04db7b35d8479e1'
@@ -432,6 +460,10 @@ declare global {
                         table: 'sys_hub_action_instance_v2'
                         id: '4bb2524bc9c848108e20006ad8422697'
                     }
+                    'f1-flowstep-log-driver-season-fetch-failure': {
+                        table: 'sys_hub_action_instance_v2'
+                        id: 'c90d5d34eb7d49fd8ff64d5da87d1731'
+                    }
                     'f1-flowstep-log-fetch-failure': {
                         table: 'sys_hub_action_instance_v2'
                         id: 'af004f19480d4b8e85b414dbd8ef69e3'
@@ -444,6 +476,10 @@ declare global {
                     'f1-flowstep-log-team-page-fetch-failure': {
                         table: 'sys_hub_action_instance_v2'
                         id: '0e7ec8f908304ef6bf792ac7821492a9'
+                    }
+                    'f1-flowstep-lookup-championships-for-driver-team-seasons': {
+                        table: 'sys_hub_action_instance_v2'
+                        id: 'e889279e41444533ba5c15878b773d51'
                     }
                     'f1-flowstep-lookup-championships-to-purge': {
                         table: 'sys_hub_action_instance_v2'
@@ -473,6 +509,10 @@ declare global {
                     'f1-flowstep-upsert-circuits-page': {
                         table: 'sys_hub_action_instance_v2'
                         id: '393fb8f01c314d26b4df4c7854d7346b'
+                    }
+                    'f1-flowstep-upsert-driver-team-seasons-for-season': {
+                        table: 'sys_hub_action_instance_v2'
+                        id: '855ee18fad234b4a867624e51c2c6262'
                     }
                     'f1-flowstep-upsert-drivers-page': {
                         table: 'sys_hub_action_instance_v2'
@@ -770,6 +810,10 @@ declare global {
                         table: 'sys_hub_step_instance'
                         id: '3b90b857ead14235824b615d3f393af1'
                     }
+                    'f1-step-upsert-driver-team-seasons': {
+                        table: 'sys_hub_step_instance'
+                        id: 'd0c6f458ac2746b1bc16a79fac88d5f6'
+                    }
                     'f1-step-upsert-drivers': {
                         table: 'sys_hub_step_instance'
                         id: 'f3831bb0b33b4dbd94890f365cdde367'
@@ -873,6 +917,10 @@ declare global {
                     'f1-trigger-populate-all-circuits': {
                         table: 'sys_hub_trigger_instance_v2'
                         id: '80d031f0d2914a4285c04bfc476ab116'
+                    }
+                    'f1-trigger-populate-all-driver-team-seasons': {
+                        table: 'sys_hub_trigger_instance_v2'
+                        id: '22765b6f492c4b9d9216aed5d6b9ca1b'
                     }
                     'f1-trigger-populate-all-drivers': {
                         table: 'sys_hub_trigger_instance_v2'
@@ -1254,6 +1302,15 @@ declare global {
                         key: {
                             model: 'b443df38937dcf14a03577f08bba107a'
                             element: 'offset'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '023f62f9ed2c417aa32d5d10a43b7ce6'
+                        key: {
+                            name: 'var__m_sys_hub_action_input_6275ba163e314dec8602abc1af64525c'
+                            element: 'driver_seasons_json'
+                            language: 'en'
                         }
                     },
                     {
@@ -2039,6 +2096,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sc_cat_item_category'
+                        id: '0f55cb15677d426b8765daf7d790694a'
+                        key: {
+                            sc_cat_item: '6e31292f7585411188a19a2ed9d5cb81'
+                            sc_category: 'd67c446ec0a80165000335aa37eafbc1'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '0f9e065db8df44d88449ece6cc0e709d'
                         key: {
@@ -2297,6 +2362,15 @@ declare global {
                     },
                     {
                         table: 'sys_documentation'
+                        id: '155f750b2d0546e0931a10b30fbcdde5'
+                        key: {
+                            name: 'var__m_sys_hub_action_output_6275ba163e314dec8602abc1af64525c'
+                            element: 'created_count'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
                         id: '15a82deb1d8e4aa4ac0f104bd7693f19'
                         key: {
                             name: 'var__m_sys_hub_action_input_642925c4ca2c4df1af8810b905e68586'
@@ -2524,6 +2598,15 @@ declare global {
                         key: {
                             name: 'x_1912467_f1now1_session_res'
                             element: 'q1'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '193e964476e04b61ba8c2fe71f7559b0'
+                        key: {
+                            name: 'var__m_sys_hub_action_output_6275ba163e314dec8602abc1af64525c'
+                            element: '__action_status__'
                             language: 'en'
                         }
                     },
@@ -3925,6 +4008,24 @@ declare global {
                     },
                     {
                         table: 'sys_documentation'
+                        id: '31268910a24c4e4ba7b8d01c76c260cb'
+                        key: {
+                            name: 'var__m_sys_hub_action_output_6275ba163e314dec8602abc1af64525c'
+                            element: 'skipped_count'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '31283814ebe341f5bf9523d09327b027'
+                        key: {
+                            name: 'var__m_sys_hub_action_output_6275ba163e314dec8602abc1af64525c'
+                            element: 'error_message'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
                         id: '3138c6fade384a8289687a9bf7c2fbab'
                         key: {
                             name: 'x_1912467_f1now1_circuit'
@@ -3957,6 +4058,15 @@ declare global {
                             name: 'x_1912467_f1now1_session_res'
                             element: 'session'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_element_mapping'
+                        id: '324c905d695442fe8dd69ce32bd9a03c'
+                        key: {
+                            field: 'skipped_count'
+                            table: 'var__m_sys_hub_action_output_6275ba163e314dec8602abc1af64525c'
+                            id: '6275ba163e314dec8602abc1af64525c'
                         }
                     },
                     {
@@ -4041,6 +4151,14 @@ declare global {
                         id: '3337cd14937d8b14a03577f08bba1063'
                         key: {
                             name: 'x_1912467_f1now1.user'
+                        }
+                    },
+                    {
+                        table: 'sc_cat_item_user_criteria_mtom'
+                        id: '335c3ad533a84eb194686e658b1e6670'
+                        key: {
+                            sc_cat_item: '6e31292f7585411188a19a2ed9d5cb81'
+                            user_criteria: '6e248bf8e001409183abfd83437f7b82'
                         }
                     },
                     {
@@ -4278,10 +4396,26 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_hub_action_output'
+                        id: '384e9696b23d42a89a5737b88aae9a26'
+                        key: {
+                            model: '6275ba163e314dec8602abc1af64525c'
+                            element: 'created_count'
+                        }
+                    },
+                    {
                         table: 'ua_table_licensing_config'
                         id: '3881e435a7f346a09cd897b9ed4c3306'
                         key: {
                             name: 'x_1912467_f1now1_session'
+                        }
+                    },
+                    {
+                        table: 'sys_hub_step_ext_output'
+                        id: '38a23e093d0e46c8b9beb2eef80a965b'
+                        key: {
+                            model: 'd0c6f458ac2746b1bc16a79fac88d5f6'
+                            element: 'updated_count'
                         }
                     },
                     {
@@ -5470,6 +5604,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_hub_step_ext_output'
+                        id: '53fb6007cb6641ebb03539f5e2c243b4'
+                        key: {
+                            model: 'd0c6f458ac2746b1bc16a79fac88d5f6'
+                            element: 'skipped_count'
+                        }
+                    },
+                    {
                         table: 'sys_ui_list_element'
                         id: '543c9c00caaa4fce94c4f6253cb194a4'
                         key: {
@@ -5824,6 +5966,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_hub_step_ext_input'
+                        id: '5a6ac5a3c74e45a18f54344dc5820c53'
+                        key: {
+                            model: 'd0c6f458ac2746b1bc16a79fac88d5f6'
+                            element: 'driver_seasons_json'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '5a7bfd33d5d049faab75b6fa2268934a'
                         key: {
@@ -6020,6 +6170,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_hub_action_output'
+                        id: '5ef3a12520a24e52bf3c8564e6cd370a'
+                        key: {
+                            model: '6275ba163e314dec8602abc1af64525c'
+                            element: '__dont_treat_as_error__'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '5f03bd2d732042c7a39794a0dcfe05d1'
                         key: {
@@ -6044,6 +6202,15 @@ declare global {
                             field: '__action_status__'
                             table: 'var__m_sys_hub_action_output_62535b78937dcf14a03577f08bba10e7'
                             id: '62535b78937dcf14a03577f08bba10e7'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '5f7e97e76ea545ca90ffd3958923ba08'
+                        key: {
+                            name: 'var__m_sys_hub_action_output_6275ba163e314dec8602abc1af64525c'
+                            element: 'updated_count'
+                            language: 'en'
                         }
                     },
                     {
@@ -6205,6 +6372,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_variable_value'
+                        id: '6311e6a165ad45008035a680cf98e372'
+                        key: {
+                            document_key: 'd0c6f458ac2746b1bc16a79fac88d5f6'
+                            variable: '74315b04b3201300176b051a16a8dc2b'
+                        }
+                    },
+                    {
                         table: 'sys_security_acl_role'
                         id: '63b454e43737427f85783a9d13a23d13'
                         key: {
@@ -6309,6 +6484,14 @@ declare global {
                                 }
                             }
                             element: 'position'
+                        }
+                    },
+                    {
+                        table: 'sc_cat_item_catalog'
+                        id: '6586bd7a320d4de88fa28574f828d8b2'
+                        key: {
+                            sc_cat_item: '6e31292f7585411188a19a2ed9d5cb81'
+                            sc_catalog: '742ce428d7211100f2d224837e61036d'
                         }
                     },
                     {
@@ -7073,6 +7256,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_variable_value'
+                        id: '76596ad6e263427eaf49247b190367c3'
+                        key: {
+                            document_key: 'd0c6f458ac2746b1bc16a79fac88d5f6'
+                            variable: '71aa7f6647032200b4fad7527c9a719b'
+                        }
+                    },
+                    {
                         table: 'sys_ui_list_element'
                         id: '769b31f2d65946f596677e5164148a33'
                         key: {
@@ -7158,6 +7349,14 @@ declare global {
                             field: 'driver_id'
                             table: 'var__m_sys_hub_step_ext_input_ce173c770cc3457a9467ad0401f85607'
                             id: 'ce173c770cc3457a9467ad0401f85607'
+                        }
+                    },
+                    {
+                        table: 'sys_hub_action_output'
+                        id: '7836bf409dc1496f9be75305168c2600'
+                        key: {
+                            model: '6275ba163e314dec8602abc1af64525c'
+                            element: 'updated_count'
                         }
                     },
                     {
@@ -7357,6 +7556,14 @@ declare global {
                             field: 'error_message'
                             table: 'var__m_sys_hub_action_output_9d53d778937dcf14a03577f08bba1055'
                             id: '9d53d778937dcf14a03577f08bba1055'
+                        }
+                    },
+                    {
+                        table: 'sys_hub_action_output'
+                        id: '7dc90ec390944be5993323925392a185'
+                        key: {
+                            model: '6275ba163e314dec8602abc1af64525c'
+                            element: '__action_status__'
                         }
                     },
                     {
@@ -7875,6 +8082,14 @@ declare global {
                                 }
                             }
                             element: 'wins'
+                        }
+                    },
+                    {
+                        table: 'sys_hub_step_ext_output'
+                        id: '8998fcbd79fd46da94ab61326d386f03'
+                        key: {
+                            model: 'd0c6f458ac2746b1bc16a79fac88d5f6'
+                            element: 'error_message'
                         }
                     },
                     {
@@ -10135,6 +10350,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_element_mapping'
+                        id: 'b2db634790cc448dbdce24e55485d8b3'
+                        key: {
+                            field: 'error_message'
+                            table: 'var__m_sys_hub_action_output_6275ba163e314dec8602abc1af64525c'
+                            id: '6275ba163e314dec8602abc1af64525c'
+                        }
+                    },
+                    {
                         table: 'sys_hub_action_output'
                         id: 'b312f73f41624c4ea699173a9bbd5dd7'
                         key: {
@@ -10442,6 +10666,15 @@ declare global {
                             name: 'var__m_sys_hub_action_output_9d53d778937dcf14a03577f08bba1055'
                             element: 'response_body'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_element_mapping'
+                        id: 'b9e2440c0d074bedab43f54528f0a5f6'
+                        key: {
+                            field: 'created_count'
+                            table: 'var__m_sys_hub_action_output_6275ba163e314dec8602abc1af64525c'
+                            id: '6275ba163e314dec8602abc1af64525c'
                         }
                     },
                     {
@@ -10979,6 +11212,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_hub_action_output'
+                        id: 'c3494d0e7ab84f1aa21aeddc6a3c16eb'
+                        key: {
+                            model: '6275ba163e314dec8602abc1af64525c'
+                            element: 'skipped_count'
+                        }
+                    },
+                    {
                         table: 'sys_element_mapping'
                         id: 'c353db78937dcf14a03577f08bba1050'
                         deleted: true
@@ -11262,6 +11503,14 @@ declare global {
                             field: '__action_status__'
                             table: 'var__m_sys_hub_action_output_d2335b38937dcf14a03577f08bba10b7'
                             id: 'd2335b38937dcf14a03577f08bba10b7'
+                        }
+                    },
+                    {
+                        table: 'sys_hub_step_ext_output'
+                        id: 'c744dacf0d0b4bbfba89ed24e1fabef2'
+                        key: {
+                            model: 'd0c6f458ac2746b1bc16a79fac88d5f6'
+                            element: 'created_count'
                         }
                     },
                     {
@@ -11840,6 +12089,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_hub_action_output'
+                        id: 'd5de393f66584fc5ac77117887930b17'
+                        key: {
+                            model: '6275ba163e314dec8602abc1af64525c'
+                            element: 'error_message'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: 'd61e03eaa7ea4b6e87532adc125e029f'
                         key: {
@@ -11990,6 +12247,15 @@ declare global {
                                 }
                             }
                             element: 'sys_mod_count'
+                        }
+                    },
+                    {
+                        table: 'sys_element_mapping'
+                        id: 'd842f9af4c704e3c9eca6e3f2b66ab7e'
+                        key: {
+                            field: 'driver_seasons_json'
+                            table: 'var__m_sys_hub_step_ext_input_d0c6f458ac2746b1bc16a79fac88d5f6'
+                            id: 'd0c6f458ac2746b1bc16a79fac88d5f6'
                         }
                     },
                     {
@@ -12449,6 +12715,14 @@ declare global {
                         key: {
                             model: 'fec90764841d4692aef49c881b52408b'
                             element: 'status_code'
+                        }
+                    },
+                    {
+                        table: 'sys_hub_action_input'
+                        id: 'de7c949bdea54cf4b37c79647b880d71'
+                        key: {
+                            model: '6275ba163e314dec8602abc1af64525c'
+                            element: 'driver_seasons_json'
                         }
                     },
                     {
@@ -13038,6 +13312,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_element_mapping'
+                        id: 'e8b25a0de20e4903834f8f8ac33faa4a'
+                        key: {
+                            field: 'updated_count'
+                            table: 'var__m_sys_hub_action_output_6275ba163e314dec8602abc1af64525c'
+                            id: '6275ba163e314dec8602abc1af64525c'
+                        }
+                    },
+                    {
                         table: 'sys_variable_value'
                         id: 'e927bf65dce74565993e3f7ceb9af1dc'
                         key: {
@@ -13164,6 +13447,15 @@ declare global {
                         key: {
                             model: '642925c4ca2c4df1af8810b905e68586'
                             element: 'status_code'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'eb95ce45fdbb4f8f98a54246eff5dc7d'
+                        key: {
+                            name: 'var__m_sys_hub_action_output_6275ba163e314dec8602abc1af64525c'
+                            element: '__dont_treat_as_error__'
+                            language: 'en'
                         }
                     },
                     {
